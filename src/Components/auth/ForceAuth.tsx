@@ -35,7 +35,7 @@ export default function ForceAuth(props){
     }else if (loading){
         return RenderLoading()
     }else{
-        router.push('/Login')
+        router.push('/Profile')
         return null
     }
 }

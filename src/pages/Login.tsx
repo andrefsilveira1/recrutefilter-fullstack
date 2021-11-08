@@ -2,8 +2,8 @@ import { useState } from "react";
 import Auth from "../Components/auth/Authinput";
 import { AtentionIco } from "../Components/Icons/Index";
 import useAuth from "../data/hook/UseAuth";
-
-
+import logimage from "../../public/images/loginimage.jpg"
+import Image from "next/image"
 export default function Login(){
 
     const {login, Register, loginGoogle} = useAuth()
@@ -31,8 +31,7 @@ export default function Login(){
             <div className={`
             hidden md:block md:w-1/2 lg:w-2/3
             `}>
-                <img src="https://source.unsplash.com/random" alt="Imagem da tela de autenticação"
-                    className={`h-screen w-full object-cover`}
+                <Image layout="responsive" src={logimage} alt="Imagem da tela de autenticação" height={`100`} width={`100`} className={`h-screen w-full object-cover`}
                 />
             </div>
             <div className={` m-10 md:block w-full md:w-1/2 lg:w-1/3`}>

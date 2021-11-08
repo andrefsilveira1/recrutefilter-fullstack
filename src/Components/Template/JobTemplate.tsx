@@ -11,7 +11,7 @@ interface JobTemplateProps{
 }
 export default function JobTemplate(props: JobTemplateProps){
     return(
-        <div className={` h-48 w-7/12 ml-96 bg-gray-400 flex flex-row justify-around mb-10`}>
+        <div className={` h-48 w-7/12 ml-96 bg-gray-200 flex flex-row justify-around mb-10 rounded-full shadow-lg text-blue-400`}>
             <div className={`h-full w-1/12 flex items-center justify-center`}>
                 {userIco(12)}
             </div>

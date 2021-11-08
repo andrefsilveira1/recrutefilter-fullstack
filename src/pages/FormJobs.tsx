@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Job from "../core/Job";
 import UseJobs from "../data/hook/UseJobs";
-import Input from "./input";
+import Input from "./Input";
 
 interface FormProps{
     job?:Job
@@ -19,7 +19,7 @@ export default function Formjob(props: FormProps){
     return(
         <>
         <div className={`flex flex-col items-center justify-center`}>
-        <h1 className={`font-bold `}>Cadastro de vaga de emprego</h1>
+        <h1 className={`font-bold text-lg `}>Cadastro de vaga de emprego</h1>
                 <div className={`w-9/12 `}>
                 <Input onChange={setName} text="Nome da Empresa" value={name}/>
                 <Input onChange={setWage} text="Salário" value={wage}/>

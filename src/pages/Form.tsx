@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Worker from "../core/Worker";
-import Job from "../core/Job";
-import Input from "./input";
+import Input from "./Input";
 
 interface FormProps{
     worker?:Worker

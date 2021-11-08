@@ -29,7 +29,7 @@ export default function SideBar(props: SideBarProps){
             h-20 w-20 bg-gradient-to-r `}>
             </div>
             <ul className={`flex-grow`}>
-                <MenuItem text="Menu" ico={menuIco(7)} onClick={ChangeSide}/>
+                <MenuItem text="Menu" ico={menuIco} onClick={ChangeSide}/>
                 <MenuItem url="/" text="Home" ico={HomeIco}/>
                 <MenuItem url="/Settings" text="Settings" ico={SettingsIco}/>
                 <MenuItem url="/Notifications" text="Notifications" ico={BellIco}/>
@@ -64,7 +64,7 @@ export default function SideBar(props: SideBarProps){
             dark:bg-gray-900 dark:text-gray-200 p-5
              w-5`}>
                 <ul>
-                    <MenuButton ico={menuIco(5)} onClick={ChangeSide}/>
+                    <MenuButton ico={menuIco} onClick={ChangeSide}/>
                 </ul>
             </aside>
             )}
